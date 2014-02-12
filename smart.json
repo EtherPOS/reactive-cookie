@@ -1,6 +1,6 @@
 {
   "name": "reactive-cookie",
-  "description": "Reactive cookie support for client",
+  "description": "Reactive cookie support for client.",
   "homepage": "https://github.com/etherpos/reactive-cookie",
   "author": "Repackaged by EtherPOS (http://www.etherpos.com)",
   "version": "0.0.1",
