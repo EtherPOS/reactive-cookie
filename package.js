@@ -1,11 +1,19 @@
 Package.describe({
-  summary: "Reactive cookie support for client"
+  summary: "Reactive cookie support for client",
+  // Version number.
+  version: "0.0.6",
+  // Optional.  Default is package directory name.
+  name: "steeve:reactive-cookie",
+  // Optional github URL to your source repository.
+  git: "https://github.com/EtherPOS/reactive-cookie.git",
 });
 
-Package.on_use(function (api, where) {
-  if(api.export) {
-    api.use('deps', 'client');
-    api.export('ReactiveCookie', 'client');
-  }
-  api.add_files('reactivecookie.js', 'client');
+Package.onUse(function (api) {
+  api.versionsFrom('0.9.0');
+  api.use('deps', 'client');
+  
+
+  api.addFiles('reactivecookie.js', 'client');
+  
+  api.export('ReactiveCookie', 'client');
 });

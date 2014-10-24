@@ -1,14 +1,14 @@
 ReactiveCookie = {};
 
 ReactiveCookie._deps = {};
-ReactiveCookie._dep = new Deps.Dependency();
+ReactiveCookie._dep = new Tracker.Dependency();
 
 
 
 ReactiveCookie.get = function(name) {
   var _dep = ReactiveCookie._deps[name];
   if(!_dep) {
-    ReactiveCookie._deps[name] = new Deps.Dependency();
+    ReactiveCookie._deps[name] = new Tracker.Dependency();
     _dep = ReactiveCookie._deps[name];
   }
   _dep.depend();
@@ -47,7 +47,7 @@ ReactiveCookie.set = function(name, value, duration) {
 
   var _dep = ReactiveCookie._deps[name];
   if(!_dep) {
-    ReactiveCookie._deps[name] = new Deps.Dependency();
+    ReactiveCookie._deps[name] = new Tracker.Dependency();
     _dep = ReactiveCookie._deps[name];
   }
   _dep.changed();
