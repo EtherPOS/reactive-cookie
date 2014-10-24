@@ -6,7 +6,7 @@ Renamed original package https://github.com/subhog/meteor-cookies for basic reac
 Installation
 =============
 
-    mrt add reactive-cookie
+    meteor add reactive-cookie
 
 API
 ===
